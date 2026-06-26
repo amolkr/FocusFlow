@@ -1,0 +1,20 @@
+{
+  "name": "student-productivity-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Full-stack student productivity platform with planning, habits, notes, calendar, Pomodoro, and analytics.",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace frontend\" \"npm run dev --workspace backend\"",
+    "build": "npm run build --workspace frontend",
+    "start": "npm run start --workspace backend",
+    "lint": "npm run lint --workspace frontend",
+    "install:all": "npm install --workspaces"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
