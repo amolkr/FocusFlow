@@ -52,7 +52,7 @@ app.use(
 app.get("/api/health", (_req, res) => {
   res.json({
     status: "ok",
-    service: "student-productivity-hub-api",
+    service: "focus-flow-api",
     databaseConfigured: Boolean(process.env.MONGODB_URI)
   });
 });

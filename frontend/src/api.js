@@ -1,6 +1,6 @@
 const API_BASE_URL = import.meta.env.VITE_API_URL || "/api";
-const TOKEN_KEY = "student-productivity-token";
-const USER_KEY = "student-productivity-user";
+const TOKEN_KEY = "focus-flow-token";
+const USER_KEY = "focus-flow-user";
 
 export function getStoredSession() {
   const token = window.localStorage.getItem(TOKEN_KEY);
@@ -58,7 +58,12 @@ export const authApi = {
       method: "POST",
       body: JSON.stringify(payload)
     }),
-  me: () => apiRequest("/auth/me")
+  me: () => apiRequest("/auth/me"),
+  updateMe: (payload) =>
+    apiRequest("/auth/me", {
+      method: "PATCH",
+      body: JSON.stringify(payload)
+    })
 };
 
 export function createCrudApi(resource) {

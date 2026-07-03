@@ -52,6 +52,42 @@ router.get("/me", protect, (req, res) => {
   res.json({ user: serializeUser(req.user) });
 });
 
+router.patch("/me", protect, async (req, res, next) => {
+  try {
+    const { name, preferences = {} } = req.body;
+    const currentPreferences = req.user.preferences?.toObject?.() || req.user.preferences || {};
+    const nextPreferences = {
+      ...currentPreferences,
+      ...preferences
+    };
+
+    if (name !== undefined) {
+      const trimmedName = String(name).trim();
+      if (!trimmedName) {
+        return res.status(400).json({ message: "Name cannot be empty" });
+      }
+      req.user.name = trimmedName;
+    }
+
+    if (nextPreferences.theme && !["light", "dark", "system"].includes(nextPreferences.theme)) {
+      return res.status(400).json({ message: "Invalid theme preference" });
+    }
+
+    const dailyGoalHours = Number(nextPreferences.dailyGoalHours);
+
+    req.user.preferences = {
+      theme: nextPreferences.theme || "system",
+      notifications: nextPreferences.notifications ?? true,
+      dailyGoalHours: Number.isFinite(dailyGoalHours) && dailyGoalHours > 0 ? dailyGoalHours : 3
+    };
+
+    await req.user.save();
+    res.json({ user: serializeUser(req.user) });
+  } catch (error) {
+    next(error);
+  }
+});
+
 function serializeUser(user) {
   return {
     id: user._id,

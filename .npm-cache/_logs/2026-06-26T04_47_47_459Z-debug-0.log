@@ -2,13 +2,13 @@
 1 info using npm@11.4.2
 2 info using node@v22.17.0
 3 silly config load:file:C:\Users\amolk\AppData\Roaming\npm\node_modules\npm\npmrc
-4 silly config load:file:E:\github\Student Productivity Hub\.npmrc
+4 silly config load:file:E:\github\FocusFlow\.npmrc
 5 silly config load:file:C:\Users\amolk\.npmrc
 6 silly config load:file:C:\Users\amolk\AppData\Roaming\npm\etc\npmrc
 7 verbose title npm audit
 8 verbose argv "audit" "--audit-level" "moderate" "--cache" ".npm-cache"
-9 verbose logfile logs-max:10 dir:E:\github\Student Productivity Hub\.npm-cache\_logs\2026-06-26T04_47_47_459Z-
-10 verbose logfile E:\github\Student Productivity Hub\.npm-cache\_logs\2026-06-26T04_47_47_459Z-debug-0.log
+9 verbose logfile logs-max:10 dir:E:\github\FocusFlow\.npm-cache\_logs\2026-06-26T04_47_47_459Z-
+10 verbose logfile E:\github\FocusFlow\.npm-cache\_logs\2026-06-26T04_47_47_459Z-debug-0.log
 11 silly logfile done cleaning log files
 12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
 13 silly audit bulk request {
@@ -551,7 +551,7 @@
 23 silly packumentCache corgi:https://registry.npmjs.org/@vitejs%2fplugin-react cache-miss
 24 http fetch GET 200 https://registry.npmjs.org/@vitejs%2fplugin-react 421ms (cache miss)
 25 silly packumentCache corgi:https://registry.npmjs.org/@vitejs%2fplugin-react set size:undefined disposed:false
-26 verbose cwd E:\github\Student Productivity Hub
+26 verbose cwd E:\github\FocusFlow
 27 verbose os Windows_NT 10.0.26200
 28 verbose node v22.17.0
 29 verbose npm  v11.4.2

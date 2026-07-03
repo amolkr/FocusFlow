@@ -2,13 +2,13 @@
 1 info using npm@11.4.2
 2 info using node@v22.17.0
 3 silly config load:file:C:\Users\amolk\AppData\Roaming\npm\node_modules\npm\npmrc
-4 silly config load:file:E:\github\Student Productivity Hub\.npmrc
+4 silly config load:file:E:\github\FocusFlow\.npmrc
 5 silly config load:file:C:\Users\amolk\.npmrc
 6 silly config load:file:C:\Users\amolk\AppData\Roaming\npm\etc\npmrc
 7 verbose title npm audit
 8 verbose argv "audit" "--audit-level" "moderate" "--cache" ".npm-cache"
-9 verbose logfile logs-max:10 dir:E:\github\Student Productivity Hub\.npm-cache\_logs\2026-06-26T06_57_27_578Z-
-10 verbose logfile E:\github\Student Productivity Hub\.npm-cache\_logs\2026-06-26T06_57_27_578Z-debug-0.log
+9 verbose logfile logs-max:10 dir:E:\github\FocusFlow\.npm-cache\_logs\2026-06-26T06_57_27_578Z-
+10 verbose logfile E:\github\FocusFlow\.npm-cache\_logs\2026-06-26T06_57_27_578Z-debug-0.log
 11 silly logfile done cleaning log files
 12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
 13 silly audit bulk request {
@@ -480,7 +480,7 @@
 13 silly audit }
 14 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 841ms
 15 silly audit report {}
-16 verbose cwd E:\github\Student Productivity Hub
+16 verbose cwd E:\github\FocusFlow
 17 verbose os Windows_NT 10.0.26200
 18 verbose node v22.17.0
 19 verbose npm  v11.4.2
