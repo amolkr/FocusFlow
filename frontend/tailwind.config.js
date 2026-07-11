@@ -8,11 +8,11 @@ export default {
         sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"]
       },
       colors: {
-        ink: "#18212f",
+        ink: "#18202e",
         mint: "#2fbf9a",
         coral: "#ff7a59",
         saffron: "#f4b740",
-        skyglass: "#e9f7fb"
+        skyglass: "#e4f5fa"
       },
       boxShadow: {
         soft: "0 18px 50px rgba(20, 33, 61, 0.10)"
