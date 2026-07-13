@@ -72,6 +72,7 @@ const navItems = [
   { label: "Settings", value: "settings", icon: Settings }
 ];
 
+
 const emptySummary = {
   completedTasks: 0,
   pendingTasks: 0,
@@ -102,6 +103,7 @@ function App() {
   const [notice, setNotice] = useState("");
   const [query, setQuery] = useState("");
   const [data, setData] = useState(emptyData);
+
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
@@ -319,6 +321,8 @@ function AuthPage({ darkMode, setDarkMode, onAuth }) {
     </section>
   );
 }
+
+
 
 function DashboardView({ activeView, data, rawData, chartOptions, runAction, setActiveView, user, updateUser, darkMode, setDarkMode }) {
   if (activeView === "tasks") return <TaskManager tasks={data.tasks} runAction={runAction} />;
