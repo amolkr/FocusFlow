@@ -914,5 +914,3 @@ function isToday(value) {
 }
 
 export default App;
-
-
